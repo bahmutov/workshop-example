@@ -1,4 +1,4 @@
-# cypress-workshop-ci-example [![ci](https://github.com/bahmutov/workshop-example/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/bahmutov/workshop-example/actions/workflows/ci.yml)
+# cypress-workshop-ci-example [![ci](https://github.com/bahmutov/workshop-example/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/bahmutov/workshop-example/actions/workflows/ci.yml) [![ci-example2](https://img.shields.io/endpoint?url=https://dashboard.cypress.io/badge/count/37e5r2/main&style=flat&logo=cypress)](https://dashboard.cypress.io/projects/37e5r2/runs)
 > A simple example app to be used during [bahmutov/cypress-workshop-ci](https://github.com/bahmutov/cypress-workshop-ci) session
 
 ## README
