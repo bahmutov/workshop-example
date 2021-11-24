@@ -1,0 +1,31 @@
+{
+  "name": "cypress-workshop-ci-example",
+  "version": "1.0.0",
+  "description": "A simple example app to be used during cypress-workshop-ci session",
+  "private": true,
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/cypress-workshop-ci-example.git"
+  },
+  "keywords": [
+    "cypress-example",
+    "cypress-workshop-example"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/cypress-workshop-ci-example/issues"
+  },
+  "homepage": "https://github.com/bahmutov/cypress-workshop-ci-example#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "0.11.1",
+    "cypress": "9.1.0",
+    "prettier": "2.2.1"
+  }
+}
