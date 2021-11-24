@@ -6,7 +6,7 @@ describe('Example site', () => {
     cy.contains('h1', 'cypress-workshop-ci-example').should('be.visible')
   })
 
-  it('navigates to README', () => {
+  it('navigates to README!', () => {
     cy.visit('/')
     cy.contains('a', 'README').click()
     cy.location('pathname').should('equal', '/README/')
@@ -21,4 +21,8 @@ describe('Example site', () => {
     cy.visit('/README/')
     cy.contains('h2', 'README')
   })
+})
+
+afterEach(() => {
+  cy.wait(1000)
 })
