@@ -12,6 +12,20 @@ jobs:
       - name: Checkout 🛎
         uses: actions/checkout@v2
 
+      - name: Run smoke Cypress tests 🧪
+        uses: cypress-io/github-action@v2
+        with:
+          record: true
+          parallel: true
+          start: npm start
+          wait-on: 'http://localhost:8080'
+          group: '0. Smoke tests'
+          spec: 'cypress/integration/spec3.js'
+        env:
+          # pass the record key as environment variable
+          # during this CI step
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+
       - name: Run Cypress tests 🧪
         uses: cypress-io/github-action@v2
         with:
@@ -20,6 +34,7 @@ jobs:
           parallel: true
           start: npm start
           wait-on: 'http://localhost:8080'
+          group: '1. All tests'
         env:
           # pass the record key as environment variable
           # during this CI step
