@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('Example site', () => {
+describe('Example site 2', () => {
   it('loads', () => {
     cy.visit('/')
     cy.contains('h1', 'cypress-workshop-ci-example').should('be.visible')
@@ -9,6 +9,7 @@ describe('Example site', () => {
   it('navigates to README!', () => {
     cy.visit('/')
     cy.contains('a', 'README').click()
+    cy.wait(10000)
     cy.location('pathname').should('equal', '/READMEZ/')
   })
 
@@ -20,7 +21,6 @@ describe('Example site', () => {
   it('redirects to README/', () => {
     cy.visit('/README/')
     cy.contains('h2', 'README')
-    cy.wait(10000)
   })
 })
 
