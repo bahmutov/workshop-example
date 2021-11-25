@@ -10,4 +10,14 @@ publish = "_site"
   [plugins.inputs]
     record = true
     tag = "Netlify"
-    group = "All tests"
+    group = "2. All tests"
+
+  # run Cypress tests before building and deploying
+  [plugins.inputs.preBuild]
+    enable = true
+    # call the same commands as we do locally
+    start = 'eleventy --serve'
+    wait-on = 'http://localhost:8080'
+    record = true
+    tag = "Netlify"
+    group = "1. Before deploy"
