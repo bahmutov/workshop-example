@@ -7,5 +7,7 @@ workflows:
       # "cypress" is the name of the imported orb
       # "run" is the name of the job defined in Cypress orb
       - cypress/run:
+          name: Run Cypress tests
           start: npm start
           wait-on: 'http://localhost:8080'
+          no-workspace: true
