@@ -13,7 +13,8 @@ workflows:
           name: Run Cypress tests
           requires:
             - Install everything
-          install-command: echo 'Everything was already installed'
+          parallel: true
+          parallelism: 3
           start: npm start
           wait-on: 'http://localhost:8080'
           no-workspace: true
