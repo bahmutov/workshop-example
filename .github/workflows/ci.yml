@@ -21,6 +21,7 @@ jobs:
           wait-on: 'http://localhost:8080'
           group: '0. Smoke tests'
           spec: 'cypress/integration/spec3.js'
+          tag: 'GitHub'
         env:
           # pass the record key as environment variable
           # during this CI step
@@ -35,6 +36,7 @@ jobs:
           start: npm start
           wait-on: 'http://localhost:8080'
           group: '1. All tests'
+          tag: 'GitHub'
         env:
           # pass the record key as environment variable
           # during this CI step
