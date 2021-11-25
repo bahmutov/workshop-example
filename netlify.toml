@@ -9,3 +9,5 @@ publish = "_site"
   package = "netlify-plugin-cypress"
   [plugins.inputs]
     record = true
+    tag = "Netlify"
+    group = "All tests"
