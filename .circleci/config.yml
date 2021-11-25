@@ -13,3 +13,4 @@ workflows:
           no-workspace: true
           record: true
           tags: CircleCI
+          group: '1. All tests'
